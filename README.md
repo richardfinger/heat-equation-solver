@@ -9,4 +9,10 @@ The solution can be displayed using the make_gif.m Matlab script as :
 
 ![alt tag](https://github.com/richardfinger/heat-equation-solver/blob/master/docs/solution.gif)
 
+## Compilation
+
+Before compiling the code check the compiler setting in the Makefile. Default is gcc and nvcc. For nvcc to work, you need to have CUDA compatible GPU. To compile the code use `make c` or `make cuda`. 
+
+## License
+
 The source code is lincesed under MIT license.
