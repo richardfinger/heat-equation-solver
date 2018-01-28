@@ -6,12 +6,10 @@
 %
 %  @author Richard Finger
 %}
-
 figure
 hold on
 
-for i = 1:41
-
+for i = 1 : 41
     filename = 'paralel_video.gif';
     name = strcat('matrix',num2str(i),'.csv');
     M = csvread(name);
@@ -30,7 +28,7 @@ for i = 1:41
     im = frame2im(frame);
     [A,map] = rgb2ind(im,256);
 
-	if i == 1;
+	if i == 1
 		imwrite(A,map,filename,'gif','LoopCount',Inf,'DelayTime',1);
 	else
 		imwrite(A,map,filename,'gif','WriteMode','append','DelayTime',1);
